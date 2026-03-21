@@ -5,10 +5,6 @@
     <icon src="https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Picsart_26-03-21_17-12-28-760.png" />
   </channel>
 
-  <programme start="20260321160000 +0000" stop="20260321170000 +0000" channel="canal_plus_evenements_4k">
-    <title>Canal + Événements 4K</title>
-    <desc>Canal + Événements 4K diffuse les plus grands événements sportifs et culturels en Ultra Haute Définition.</desc>
-  </programme>
   <programme start="20260321170000 +0000" stop="20260321180000 +0000" channel="canal_plus_evenements_4k">
     <title>Canal + Événements 4K</title>
     <desc>Canal + Événements 4K diffuse les plus grands événements sportifs et culturels en Ultra Haute Définition.</desc>
@@ -674,6 +670,10 @@
     <desc>Canal + Événements 4K diffuse les plus grands événements sportifs et culturels en Ultra Haute Définition.</desc>
   </programme>
   <programme start="20260328150000 +0000" stop="20260328160000 +0000" channel="canal_plus_evenements_4k">
+    <title>Canal + Événements 4K</title>
+    <desc>Canal + Événements 4K diffuse les plus grands événements sportifs et culturels en Ultra Haute Définition.</desc>
+  </programme>
+  <programme start="20260328160000 +0000" stop="20260328170000 +0000" channel="canal_plus_evenements_4k">
     <title>Canal + Événements 4K</title>
     <desc>Canal + Événements 4K diffuse les plus grands événements sportifs et culturels en Ultra Haute Définition.</desc>
   </programme>
