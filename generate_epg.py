@@ -3,7 +3,8 @@ from datetime import datetime, timedelta
 channel_id = "canal_plus_evenements_4k"
 program_title = "Canal + Événements 4K"
 program_desc = "Canal + Événements 4K diffuse les plus grands événements sportifs et culturels en Ultra Haute Définition."
-icon_url = "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Picsart_26-03-21_16-51-51-619.jpg"
+# استبدال رابط الشعار بالرابط الجديد
+icon_url = "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Picsart_26-03-21_17-12-28-760.png"
 
 # Commence à l'heure actuelle (UTC) arrondie à l'heure
 start_time = datetime.utcnow().replace(minute=0, second=0, microsecond=0)
