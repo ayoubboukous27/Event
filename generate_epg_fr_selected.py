@@ -21,6 +21,7 @@ logos = {
     "CanalPlusFoot.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/SAVE_20260321_185456.jpg",
     "CanalPlus.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/Picsart_26-03-21_19-10-24-004.png",
     "CanalPlusUHD.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/Picsart_26-03-21_19-11-24-727.png",
+    "M6.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/Logo_M6_(2020%2C_fond_clair).svg.png",
 }
 
 # إنشاء ملف XMLTV جديد
