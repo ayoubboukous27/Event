@@ -18,12 +18,13 @@ logos = {
     "France4.fr": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/france/france-4-fr.png",
     "France5.fr": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/france/france-5-fr.png",
     "EvenementsSports4KUHD.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Picsart_26-03-21_17-41-51-504.png",
+    "CanalPlusFoot.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/SAVE_20260321_185456.jpg",
 }
 
 # إنشاء ملف XMLTV جديد
 tv = ET.Element("tv")
 
-# إضافة القنوات من XMLTVFR إذا موجودة ضمن القائمة المختارة
+# إضافة القنوات الموجودة ضمن القائمة المختارة
 for ch in root_src.findall("channel"):
     ch_id = ch.attrib["id"]
     if ch_id in logos:
