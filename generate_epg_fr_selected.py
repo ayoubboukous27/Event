@@ -26,6 +26,9 @@ logos = {
     "CanalPlusKIDS.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/%2Bkids.png",
     "CanalPlusSport.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/%2Bsports.png",
     "CanalPlusSport360.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/%2Bsports360.png",
+    "beINSPORTS1.fr": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/france/bein-sports-1-french-fr.png",
+    "beINSPORTS2.fr": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/france/bein-sports-2-french-fr.png",
+    "beINSPORTS3.fr": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/france/bein-sports-3-french-fr.png",
 }
 
 # إنشاء ملف XMLTV جديد
