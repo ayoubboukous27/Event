@@ -29,6 +29,9 @@ logos = {
     "beINSPORTS1.fr": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/france/bein-sports-1-french-fr.png",
     "beINSPORTS2.fr": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/france/bein-sports-2-french-fr.png",
     "beINSPORTS3.fr": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/france/bein-sports-3-french-fr.png",
+    # إضافة FranceTVDocs و FranceTVSeries
+    "FranceTVDocs.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/FranceTVDocs.fr.png",
+    "FranceTVSeries.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/FranceTVSeries.fr.png",
 }
 
 # إضافة Canal+ Live 1 → 10
