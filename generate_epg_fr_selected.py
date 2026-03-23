@@ -31,6 +31,11 @@ logos = {
     "beINSPORTS3.fr": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/france/bein-sports-3-french-fr.png",
 }
 
+# إضافة Canal+ Live 1 → 10
+for i in range(1, 11):
+    channel_id = f"CanalPlusLive{i}.fr"
+    logos[channel_id] = f"https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/live{i}.png"
+
 # إنشاء ملف XMLTV جديد
 tv = ET.Element("tv")
 
