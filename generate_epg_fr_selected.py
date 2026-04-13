@@ -27,9 +27,9 @@ logos = {
     "CanalPlusKIDS.fr": "https://github.com/ayoubboukous27/Event/raw/refs/heads/main/Logos/Canal+KidsProto2023.png",
     "CanalPlusSport.fr": "https://github.com/ayoubboukous27/Event/raw/refs/heads/main/Logos/Canal+SportProto2023.png",
     "CanalPlusSport360.fr": "https://github.com/ayoubboukous27/Event/raw/refs/heads/main/Logos/Canal+Sport360Proto2023.png",
-    "beINSPORTS1.fr": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/france/bein-sports-1-french-fr.png",
-    "beINSPORTS2.fr": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/france/bein-sports-2-french-fr.png",
-    "beINSPORTS3.fr": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/france/bein-sports-3-french-fr.png",
+    "beINSPORTS1.fr": "https://github.com/tv-logo/tv-logos/raw/refs/heads/main/countries/world-middle-east/bein-sports/bein-sports-1-french-mea.png",
+    "beINSPORTS2.fr": "https://github.com/tv-logo/tv-logos/raw/refs/heads/main/countries/world-middle-east/bein-sports/bein-sports-2-french-mea.png",
+    "beINSPORTS3.fr": "https://github.com/tv-logo/tv-logos/raw/refs/heads/main/countries/world-middle-east/bein-sports/bein-sports-3-french-mea.png",
     # إضافة FranceTVDocs و FranceTVSeries
     "FranceTVDocs.fr": "https://github.com/ayoubboukous27/Event/raw/refs/heads/main/Logos/France_TV_Docs_Short.png",
     "FranceTVSeries.fr": "https://github.com/ayoubboukous27/Event/raw/refs/heads/main/Logos/France_TV_S%C3%A9ries_Short.png",
