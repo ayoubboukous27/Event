@@ -18,20 +18,20 @@ logos = {
     "France4.fr": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/france/france-4-fr.png",
     "France5.fr": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/france/france-5-fr.png",
     "EvenementsSports4KUHD.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/%C3%A9v%C3%A9nement-4k.png",
-    "CanalPlusFoot.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/foot.png",
+    "CanalPlusFoot.fr": "https://github.com/ayoubboukous27/Event/raw/refs/heads/main/Logos/Canal+FootProto2023.png",
     "CanalPlus.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/Picsart_26-03-21_20-33-02-272.png",
     "CanalPlusUHD.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/Picsart_26-03-21_20-20-08-937.png",
     "M6.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/M6.png",
     "CanalPlusPremierLeague.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/%2Bpremier_league.png",
-    "CanalPlusKIDS.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/%2Bkids.png",
-    "CanalPlusSport.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/%2Bsports.png",
-    "CanalPlusSport360.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/%2Bsports360.png",
+    "CanalPlusKIDS.fr": "https://github.com/ayoubboukous27/Event/raw/refs/heads/main/Logos/Canal+KidsProto2023.png",
+    "CanalPlusSport.fr": "https://github.com/ayoubboukous27/Event/raw/refs/heads/main/Logos/Canal+SportProto2023.png",
+    "CanalPlusSport360.fr": "https://github.com/ayoubboukous27/Event/raw/refs/heads/main/Logos/Canal+Sport360Proto2023.png",
     "beINSPORTS1.fr": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/france/bein-sports-1-french-fr.png",
     "beINSPORTS2.fr": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/france/bein-sports-2-french-fr.png",
     "beINSPORTS3.fr": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/france/bein-sports-3-french-fr.png",
     # إضافة FranceTVDocs و FranceTVSeries
-    "FranceTVDocs.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/FranceTVDocs.fr.png",
-    "FranceTVSeries.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/FranceTVSeries.fr.png",
+    "FranceTVDocs.fr": "https://github.com/ayoubboukous27/Event/raw/refs/heads/main/Logos/France_TV_Docs_Short.png",
+    "FranceTVSeries.fr": "https://github.com/ayoubboukous27/Event/raw/refs/heads/main/Logos/France_TV_S%C3%A9ries_Short.png",
 }
 
 # إضافة Canal+ Live 1 → 10
