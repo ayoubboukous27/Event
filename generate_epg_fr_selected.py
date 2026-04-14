@@ -9,7 +9,7 @@ r = requests.get(xmltv_url)
 r.raise_for_status()
 root_src = ET.fromstring(r.content)
 
-# القنوات والشعارات
+# القنوات والشعارات المطلوبة فقط
 logos = {
     "TF1.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/TF1.png",
     "TF14k.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/TF1-4K.png",
@@ -42,40 +42,40 @@ for i in range(1, 11):
 # إنشاء ملف XMLTV جديد
 tv = ET.Element("tv")
 
-# نسخ كل القنوات من المصدر
+# نسخ القنوات المطلوبة فقط
 for ch in root_src.findall("channel"):
     ch_id = ch.attrib["id"]
-    new_ch = ET.SubElement(tv, "channel", id=ch_id)
-    name_elem = ch.find("display-name")
-    if name_elem is not None:
-        ET.SubElement(new_ch, "display-name").text = name_elem.text
-    # إضافة أيقونة إذا موجودة في logos
     if ch_id in logos:
+        new_ch = ET.SubElement(tv, "channel", id=ch_id)
+        name_elem = ch.find("display-name")
+        if name_elem is not None:
+            ET.SubElement(new_ch, "display-name").text = name_elem.text
         ET.SubElement(new_ch, "icon", src=logos[ch_id])
-    # نسخة 4K للقناة France2
-    if ch_id == "France2.fr":
-        new_ch_4k = ET.SubElement(tv, "channel", id="France24k.fr")
-        ET.SubElement(new_ch_4k, "display-name").text = "France 2 4K"
-        ET.SubElement(new_ch_4k, "icon", src=logos["France24k.fr"])
+        # نسخة 4K فقط لقناة France2
+        if ch_id == "France2.fr":
+            new_ch_4k = ET.SubElement(tv, "channel", id="France24k.fr")
+            ET.SubElement(new_ch_4k, "display-name").text = "France 2 4K"
+            ET.SubElement(new_ch_4k, "icon", src=logos["France24k.fr"])
 
-# نسخ كل البرامج من المصدر
+# نسخ البرامج للقنوات المطلوبة فقط
 for prog in root_src.findall("programme"):
     ch_id = prog.attrib.get("channel")
-    # البرنامج الأصلي
-    new_prog = ET.SubElement(tv, "programme", prog.attrib)
-    for tag in ["title", "desc", "category", "sub-title", "date"]:
-        elem = prog.find(tag)
-        if elem is not None:
-            ET.SubElement(new_prog, tag).text = elem.text
-    # نسخة 4K للقناة France2
-    if ch_id == "France2.fr":
-        new_attrib = prog.attrib.copy()
-        new_attrib["channel"] = "France24k.fr"
-        new_prog_4k = ET.SubElement(tv, "programme", new_attrib)
+    if ch_id in logos:
+        # البرنامج الأصلي للقناة
+        new_prog = ET.SubElement(tv, "programme", prog.attrib)
         for tag in ["title", "desc", "category", "sub-title", "date"]:
             elem = prog.find(tag)
             if elem is not None:
-                ET.SubElement(new_prog_4k, tag).text = elem.text
+                ET.SubElement(new_prog, tag).text = elem.text
+        # نسخة France2 4K فقط
+        if ch_id == "France2.fr":
+            new_attrib = prog.attrib.copy()
+            new_attrib["channel"] = "France24k.fr"
+            new_prog_4k = ET.SubElement(tv, "programme", new_attrib)
+            for tag in ["title", "desc", "category", "sub-title", "date"]:
+                elem = prog.find(tag)
+                if elem is not None:
+                    ET.SubElement(new_prog_4k, tag).text = elem.text
 
 # حفظ الملف النهائي
 tree = ET.ElementTree(tv)
