@@ -1,4 +1,4 @@
-import xml.etree.ElementTree as ET
+ import xml.etree.ElementTree as ET
 import requests
 
 # رابط XMLTVFR الكامل
@@ -14,7 +14,7 @@ logos = {
     "TF1.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/TF1.png",
     "TF14k.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/TF1-4K.png",
     "France2.fr": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/france/france-2-fr.png",
-    "France2.fr": "https://github.com/ayoubboukous27/Event/raw/refs/heads/main/Logos/F2-UHD.png",
+    "France24k.fr": "https://github.com/ayoubboukous27/Event/raw/refs/heads/main/Logos/F2-UHD.png",
     "France3.fr": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/france/france-3-fr.png",
     "France4.fr": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/france/france-4-fr.png",
     "France5.fr": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/france/france-5-fr.png",
@@ -30,7 +30,6 @@ logos = {
     "beINSPORTS1.fr": "https://github.com/tv-logo/tv-logos/raw/refs/heads/main/countries/world-middle-east/bein-sports/bein-sports-1-french-mea.png",
     "beINSPORTS2.fr": "https://github.com/tv-logo/tv-logos/raw/refs/heads/main/countries/world-middle-east/bein-sports/bein-sports-2-french-mea.png",
     "beINSPORTS3.fr": "https://github.com/tv-logo/tv-logos/raw/refs/heads/main/countries/world-middle-east/bein-sports/bein-sports-3-french-mea.png",
-    # إضافة FranceTVDocs و FranceTVSeries
     "FranceTVDocs.fr": "https://github.com/ayoubboukous27/Event/raw/refs/heads/main/Logos/France_TV_Docs_Short.png",
     "FranceTVSeries.fr": "https://github.com/ayoubboukous27/Event/raw/refs/heads/main/Logos/France_TV_S%C3%A9ries_Short.png",
 }
@@ -43,20 +42,28 @@ for i in range(1, 11):
 # إنشاء ملف XMLTV جديد
 tv = ET.Element("tv")
 
-# إضافة القنوات الموجودة ضمن القائمة المختارة
+# إضافة القنوات المختارة
 for ch in root_src.findall("channel"):
     ch_id = ch.attrib["id"]
     if ch_id in logos:
+        # القناة الأصلية
         new_ch = ET.SubElement(tv, "channel", id=ch_id)
         name_elem = ch.find("display-name")
         if name_elem is not None:
             ET.SubElement(new_ch, "display-name").text = name_elem.text
         ET.SubElement(new_ch, "icon", src=logos[ch_id])
 
-# نسخ البرامج الخاصة بالقنوات المختارة
+        # نسخة 4K لـ France2
+        if ch_id == "France2.fr":
+            new_ch_4k = ET.SubElement(tv, "channel", id="France24k.fr")
+            ET.SubElement(new_ch_4k, "display-name").text = "France 2 4K"
+            ET.SubElement(new_ch_4k, "icon", src=logos["France24k.fr"])
+
+# نسخ البرامج للقنوات المختارة
 for prog in root_src.findall("programme"):
     ch_id = prog.attrib.get("channel")
     if ch_id in logos:
+        # البرنامج الأصلي
         new_prog = ET.SubElement(tv, "programme", prog.attrib)
         title = prog.find("title")
         desc = prog.find("desc")
@@ -64,6 +71,16 @@ for prog in root_src.findall("programme"):
             ET.SubElement(new_prog, "title").text = title.text
         if desc is not None:
             ET.SubElement(new_prog, "desc").text = desc.text
+
+        # نسخة 4K من France2
+        if ch_id == "France2.fr":
+            new_attrib = prog.attrib.copy()
+            new_attrib["channel"] = "France24k.fr"
+            new_prog_4k = ET.SubElement(tv, "programme", new_attrib)
+            if title is not None:
+                ET.SubElement(new_prog_4k, "title").text = title.text
+            if desc is not None:
+                ET.SubElement(new_prog_4k, "desc").text = desc.text
 
 # حفظ الملف النهائي
 tree = ET.ElementTree(tv)
