@@ -22,7 +22,7 @@ logos = {
     "CanalPlusFoot.fr": "https://github.com/ayoubboukous27/Event/raw/refs/heads/main/Logos/Canal+FootProto2023.png",
     "CanalPlus.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/Picsart_26-03-21_20-33-02-272.png",
     "CanalPlusUHD.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/Picsart_26-03-21_20-20-08-937.png",
-    "M6.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/M6.png",
+    "M6.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/M6-4K.png",
     "CanalPlusPremierLeague.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/%2Bpremier_league.png",
     "CanalPlusKIDS.fr": "https://github.com/ayoubboukous27/Event/raw/refs/heads/main/Logos/Canal+KidsProto2023.png",
     "CanalPlusSport.fr": "https://github.com/ayoubboukous27/Event/raw/refs/heads/main/Logos/Canal+SportProto2023.png",
