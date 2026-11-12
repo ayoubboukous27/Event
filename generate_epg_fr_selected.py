@@ -12,7 +12,7 @@ root_src = ET.fromstring(r.content)
 # القنوات والشعارات المطلوبة فقط
 logos = {
     "TF1.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/TF1.png",
-    "TF14k.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/TF1-4K.png",
+    "TF14k.fr": "https://raw.githubusercontent.com/ayoubboukous27/Event/refs/heads/main/Logos/TF14K.png",
     "France2.fr": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/france/france-2-fr.png",
     "France24k.fr": "https://github.com/ayoubboukous27/Event/raw/refs/heads/main/Logos/F2-UHD.png",
     "France3.fr": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/france/france-3-fr.png",
